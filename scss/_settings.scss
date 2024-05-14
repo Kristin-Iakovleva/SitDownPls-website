@@ -1,0 +1,229 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100%;
+  height: 100%;
+  font-family: var(--font-family), sans-serif;
+  -webkit-text-size-adjust: 100%;
+  font-size: 16px;
+}
+
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.site-container {
+  overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
+}
+
+.is-hidden {
+  display: none !important; /* stylelint-disable-line declaration-no-important */
+}
+
+.btn-reset {
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.input-reset {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  border-radius: 0;
+  background-color: #fff;
+
+  &::-webkit-search-decoration,
+  &::-webkit-search-cancel-button,
+  &::-webkit-search-results-button,
+  &::-webkit-search-results-decoration {
+    display: none;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 var(--container-offset);
+  max-width: var(--container-width);
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+.centered {
+  text-align: center;
+}
+
+.dis-scroll {
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  overscroll-behavior: none;
+}
+
+.page--ios .dis-scroll {
+  position: relative;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+  gap: 32px;
+}
+
+.title-1 {
+  margin-bottom: 26px;
+  font-family: var(--font-family);
+  font-size: 32px;
+  font-weight: normal;
+  line-height: 32px;
+  color: var(--black);
+}
+
+.title-2 {
+  font-family: var(--font-family);
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 130%;
+  color: var(--black);
+}
+
+.buy-btn {
+  padding: 16px 35px;
+  display: block;
+  width: 128px;
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 100%;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  border-radius: 10px;
+  transition-property: background-color, color;
+  transition-duration: .4s;
+  transition-timing-function: ease-in-out;
+}
+
+.card-item {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px;
+  height: 100%;
+  min-height: 420px;
+  background-color: var(--light-grey);
+  border-radius: 10px;
+}
+
+.card-item-span {
+  display: block;
+}
+
+.card-item-btn {
+  margin-top: auto;
+}
+
+.offers--item,
+  .offers-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .offers-item {
+    padding: 30px;
+    min-height: 511px;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    background-color: var(--light-grey);
+    border-radius: 10px;
+  }
+
+.arrow-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.grid-icon {
+  width: 15px;
+  height: 15px;
+}
+
+.card-item-title {
+  margin-bottom: 24px;
+}
+
+.card-item-rate {
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 130%;
+  color: var(--secondary);
+}
+
+.grid-price {
+  display: block;
+  margin-bottom: 24px;
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 130%;
+  color: var(--grey);
+}
+
+.card-item-picture {
+  justify-content: center;
+  width: calc(100% + 35px);
+  margin-left: -17px;
+  margin-right: -16px;
+  margin-bottom: 15px;
+  height: 141px;
+align-items: end;
+}

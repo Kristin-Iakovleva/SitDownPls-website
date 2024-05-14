@@ -1,0 +1,139 @@
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+@import "hovers";
+@import "main";
+
+.header {
+  padding-bottom: 0px;
+}
+
+.main {
+  padding: 23px 15px 70px;
+}
+
+.main__links {
+margin-bottom: 32px;
+gap: 2px;
+}
+
+.main__link {
+  font-size: 14px;
+  line-height: 100%;
+  color: var(--grey);
+}
+
+.main__name {
+  font-size: 14px;
+  line-height: 100%;
+  color: var(--primary-active);
+}
+
+.main__title {
+  margin-bottom: 32px;
+}
+
+.main__title-medium {
+  margin-bottom: 14px;
+}
+
+.main__text-1 {
+  margin-bottom: 32px;
+  width: 65%;
+  font-size: 16px;
+  line-height: 180%;
+  color: var(--grey-text6);
+}
+
+.main__list-1 {
+  padding-left: 36px;
+  margin-bottom: 32px;
+  width: 48%;
+}
+
+.main__item {
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--grey-text6);
+}
+
+.main__item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.main-item-1,
+.main-item-2,
+.main-item-3 {
+  position: relative;
+}
+
+.main-item-1::before {
+  position: absolute;
+  content: '';
+  background-image: url(../img/svg/p-1.svg);
+  width: 25px;
+  height: 25px;
+left: -36px;
+}
+
+.main-item-2::before {
+  position: absolute;
+  content: '';
+  background-image: url(../img/svg/p-2.svg);
+  width: 25px;
+  height: 25px;
+left: -36px;
+}
+
+.main-item-3::before {
+  position: absolute;
+  content: '';
+  background-image: url(../img/svg/p-3.svg);
+  width: 25px;
+  height: 25px;
+left: -36px;
+}
+
+.main__title-small {
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--secondary);
+}
+
+.text-advantages {
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 180%;
+  color: var(--grey-text6);
+}
+
+.adv-2 {
+  margin-bottom: 32px;
+}
+
+.main__list-2 {
+  margin-bottom: 32px;
+}
+
+li::marker {
+  font-size: 90%;
+  color: var(--secondary);
+}
+
+.main__item-ordinary {
+  margin-bottom: 12px;
+}
+
+.main__garant {
+  align-items: center;
+  width: 48%;
+}
+
+.main__garant-img {
+  width: 26%;
+}
+
+@import "_main-media.scss";
+@import "_partners-media.scss";

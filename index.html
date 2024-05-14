@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SitDownPls</title>
+  <link rel="stylesheet" href="./css/vendor.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <script defer src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  @include('partials/header.html')
+  <main>
+    <h1 class="title is-hidden">SitDownPls</h1>
+    <section class="hero">
+      <div class="hero__container container">
+        <h2 class="hero__title">
+          Скидка 15% на первую покупку
+        </h2>
+        <a class="hero__link primary-link" href="">Получить!</a>
+      </div>
+    </section>
+    <section class="offers">
+      <div class="offers__container container">
+        <h2 class="offers__title title-1">
+          Специальные предложения
+        </h2>
+        <ul class="offers__grid grid list-reset flex">
+          <li class="offers__grid-item  offer-1">
+            <article class="offers-item">
+            <span class="offers-item-discount">- 9 000</span>
+            <div class="offers-item-picture flex">
+              <picture class="offers-item-img">
+                <source media="(max-width: 1920px)" srcset="img/offer-1.png">
+                <img class="offers-item-image" src="img/offer-1.png" alt="offer-1">
+              </picture>
+            </div>
+            <h3 class="offers-item-title title-2">
+              <span class="offers-item-span">Кресло велюровое</span>
+              <span class="offers-item-span">“X-24”</span>
+            </h3>
+            <div class="offers-item-prices flex">
+              <span class="offers-item-price new-price">15 990 руб</span>
+              <span class="offers-item-price old-price">24 990 руб</span>
+            </div>
+            <a target="_blank" href="card.html" class="offers-item-btn buy-btn">Купить</a>
+          </article>
+          </li>
+          <li class="offers__grid-item  offer-2">
+            <article class="offers-item">
+            <span class="offers-item-discount">- 10 000</span>
+            <div class="offers-item-picture picture-2 flex">
+              <picture class="offers-item-img">
+                <source media="(max-width: 1124px)" srcset="img/offer-2-1024.png">
+                <source media="(max-width: 1920px)" srcset="img/offer-2.png">
+                <img class="offers-item-image" src="img/offer-2.png" alt="offer-2">
+              </picture>
+            </div>
+            <h3 class="offers-item-title title-2">
+              <span class="offers-item-span">Диван тканевый</span>
+              <span class="offers-item-span">“Z-44”</span>
+            </h3>
+            <div class="offers-item-prices flex">
+              <span class="offers-item-price new-price">22 990 руб</span>
+              <span class="offers-item-price old-price">32 990 руб</span>
+            </div>
+            <a target="_blank" href="card.html" class="offers-item-btn buy-btn">Купить</a>
+          </article>
+          </li>
+          <li class="offers__grid-item  offer-3">
+            <article class="offers-item">
+            <span class="offers-item-discount">- 600</span>
+            <div class="offers-item-picture flex">
+              <picture class="offers-item-img">
+                <source media="(max-width: 1920px)" srcset="img/offer-3.png">
+                <img class="offers-item-image" src="img/offer-3.png" alt="offer-3">
+              </picture>
+            </div>
+            <h3 class="offers-item-title title-2">
+              <span class="offers-item-span">Будильник</span>
+              <span class="offers-item-span">“Quartz-23”</span>
+            </h3>
+            <div class="offers-item-prices flex">
+              <span class="offers-item-price new-price">1 290 руб</span>
+              <span class="offers-item-price old-price">1 890 руб</span>
+            </div>
+            <a target="_blank" href="card.html" class="offers-item-btn buy-btn">Купить</a>
+          </article>
+          </li>
+          <li class="offers__grid-item flex offer-4">
+            <article class="offers-item">
+            <span class="offers-item-discount">- 300</span>
+            <div class="offers-item-picture flex">
+              <picture class="offers-item-img">
+                <source media="(max-width: 1920px)" srcset="img/offer-4.png">
+                <img class="offers-item-image" src="img/offer-4.png" alt="offer-4">
+              </picture>
+            </div>
+            <h3 class="offers-item-title title-2">
+              Мини-скульптура “Oh my deer”
+            </h3>
+            <div class="offers-item-prices flex">
+              <span class="offers-item-price new-price">690 руб</span>
+              <span class="offers-item-price old-price">990 руб</span>
+            </div>
+            <a target="_blank" href="card.html" class="offers-item-btn buy-btn">Купить</a>
+          </article>
+          </li>
+          <li class="offers__grid-item flex offer-5">
+            <article class="offers-item">
+            <span class="offers-item-discount">- 10 000</span>
+            <div class="offers-item-picture flex">
+              <picture class="offers-item-img">
+                <source media="(max-width: 1920px)" srcset="img/offer-5.png">
+                <img class="offers-item-image" src="img/offer-5.png" alt="offer-5">
+              </picture>
+            </div>
+            <h3 class="offers-item-title title-2">
+              Диван вел-флок “Z-85”
+            </h3>
+            <div class="offers-item-prices flex">
+              <span class="offers-item-price new-price">22 990 руб</span>
+              <span class="offers-item-price old-price">32 990 руб</span>
+            </div>
+            <a target="_blank" href="card.html" class="offers-item-btn buy-btn">Купить</a>
+          </article>
+          </li>
+          <li class="offers__grid-item flex offer-6">
+            <article class="offers-item">
+            <span class="offers-item-discount">- 700</span>
+            <div class="offers-item-picture flex">
+              <picture class="offers-item-img">
+                <source media="(max-width: 1920px)" srcset="img/offer-6.png">
+                <img class="offers-item-image" src="img/offer-6.png" alt="offer-6">
+              </picture>
+            </div>
+            <h3 class="offers-item-title title-2">
+              Термометр + гидрометр “H-18”
+            </h3>
+            <div class="offers__grid-prices flex">
+              <span class="offers-item-price new-price">1 390 руб</span>
+              <span class="offers-item-price old-price">2 090 руб</span>
+            </div>
+            <a target="_blank" href="card.html" class="offers-item-btn buy-btn">Купить</a>
+          </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="rating">
+      <div class="rating__container container">
+        <h2 class="rating__title title-1">
+          Высокий рейтинг
+        </h2>
+        <ul class="rating__grid grid list-reset flex">
+          @include('partials/rating-card.html')
+        </ul>
+      </div>
+    </section>
+    <section class="oxford">
+      <div class="oxford__container container">
+        <h2 class="oxford__title">
+          Оксфорд 1950
+        </h2>
+        <p class="oxford__descr">
+          Новая коллекция изысканных кресел
+        </p>
+        <a class="oxford__link primary-link" href="">Ознакомиться</a>
+      </div>
+    </section>
+    <section class="top">
+      <div class="top__container container">
+        <h2 class="top__title title-1">
+          Топ категории
+        </h2>
+        <div class="top__grid grid flex">
+          <div class="top__grid-card flex card-1">
+            <div class="top__grid-content">
+              <ul class="top__grid-list list-reset flex">
+                <li class="top__grid-item">Прямые</li>
+                <li class="top__grid-item">Угловые</li>
+                <li class="top__grid-item">Модульные</li>
+              </ul>
+              <h3 class="top__grid-title title-2 big-title">Диваны
+                <a class="top__grid-link2 flex" target="_blank" href="catalog.html">
+                  <span class="top__grid-span">
+                    <svg class="top__grid-icon">
+                      <use xlink:href="/img/sprite.svg#cat-arrow"></use>
+                    </svg>
+                  </span>
+                </a>
+              </h3>
+            </div>
+            <a class="top__grid-link flex" target="_blank" href="catalog.html">
+              <span class="top__grid-text">В каталог</span>
+              <span class="top__grid-span">
+                <svg class="top__grid-icon">
+                  <use xlink:href="/img/sprite.svg#cat-arrow"></use>
+                </svg>
+              </span>
+            </a>
+          </div>
+          <div class="top__grid-card flex card-2">
+            <div class="top__grid-content">
+              <ul class="top__grid-list list-small list-reset flex">
+                <li class="top__grid-item top-item-small">Мягкие</li>
+                <li class="top__grid-item top-item-small">Кресла-кровати</li>
+              </ul>
+              <h3 class="top__grid-title title-2 small-title">Кресла
+                <a class="top__grid-link2 flex" target="_blank" href="catalog.html">
+                  <span class="top__grid-span">
+                    <svg class="top__grid-icon">
+                      <use xlink:href="/img/sprite.svg#cat-arrow"></use>
+                    </svg>
+                  </span>
+                </a>
+              </h3>
+            </div>
+            <a class="top__grid-link flex" target="_blank" href="catalog.html">
+              <span class="top__grid-text">В каталог</span>
+              <span class="top__grid-span">
+                <svg class="top__grid-icon">
+                  <use xlink:href="/img/sprite.svg#cat-arrow"></use>
+                </svg>
+              </span>
+            </a>
+          </div>
+          <div class="top__grid-card flex card-3">
+            <div class="top__grid-content">
+              <ul class="top__grid-list list-small list-reset flex">
+                <li class="top__grid-item top-item-small">Односпальные</li>
+                <li class="top__grid-item top-item-small">Двуспальные</li>
+              </ul>
+              <h3 class="top__grid-title title-2 small-title">Кровати
+                <a class="top__grid-link2 flex" target="_blank" href="catalog.html">
+                  <span class="top__grid-span">
+                    <svg class="top__grid-icon">
+                      <use xlink:href="/img/sprite.svg#cat-arrow"></use>
+                    </svg>
+                  </span>
+                </a>
+              </h3>
+            </div>
+            <a class="top__grid-link flex" target="_blank" href="catalog.html">
+              <span class="top__grid-text">В каталог</span>
+              <span class="top__grid-span">
+                <svg class="top__grid-icon">
+                  <use xlink:href="/img/sprite.svg#cat-arrow"></use>
+                </svg>
+              </span>
+            </a>
+          </div>
+          <div class="top__grid-card flex card-4">
+            <div class="top__grid-content">
+              <ul class="top__grid-list list-small list-reset flex">
+                <li class="top__grid-item top-item-small">Тумбы</li>
+                <li class="top__grid-item top-item-small">Комоды</li>
+              </ul>
+              <h3 class="top__grid-title title-2 small-title">Тумбы и комоды
+                <a class="top__grid-link2 flex" target="_blank" href="catalog.html">
+                  <span class="top__grid-span">
+                    <svg class="top__grid-icon">
+                      <use xlink:href="/img/sprite.svg#cat-arrow"></use>
+                    </svg>
+                  </span>
+                </a>
+              </h3>
+            </div>
+            <a class="top__grid-link flex" target="_blank" href="catalog.html">
+              <span class="top__grid-text">В каталог</span>
+              <span class="top__grid-span">
+                <svg class="top__grid-icon">
+                  <use xlink:href="/img/sprite.svg#cat-arrow"></use>
+                </svg>
+              </span>
+            </a>
+          </div>
+          <div class="top__grid-card flex card-5">
+            <div class="top__grid-content">
+              <ul class="top__grid-list list-small list-reset flex">
+                <li class="top__grid-item top-item-small">Деревянные</li>
+                <li class="top__grid-item top-item-small">Металлокаркас</li>
+              </ul>
+              <h3 class="top__grid-title title-2 small-title">Стулья
+                <a class="top__grid-link2 flex" target="_blank" href="catalog.html">
+                  <span class="top__grid-span">
+                    <svg class="top__grid-icon">
+                      <use xlink:href="/img/sprite.svg#cat-arrow"></use>
+                    </svg>
+                  </span>
+                </a>
+              </h3>
+            </div>
+            <a class="top__grid-link flex" target="_blank" href="catalog.html">
+              <span class="top__grid-text">В каталог</span>
+              <span class="top__grid-span">
+                <svg class="top__grid-icon">
+                  <use xlink:href="/img/sprite.svg#cat-arrow"></use>
+                </svg>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="usefull">
+      <div class="usefull__container container">
+        <h2 class="usefull__title title-1">
+          Полезное
+        </h2>
+        <div class="usefull__grid grid">
+          <div class="usefull__card flex">
+            <picture class="usefull__card-picture">
+              <source media="(max-width: 1024px)" srcset="img/usefull-1-1024.png">
+              <source media="(max-width: 1920px)" srcset="img/usefull-1.png">
+              <img class="usefull__card-img" src="img/usefull-1.png" alt="usefull-1">
+            </picture>
+            <div class="usefull__card-content flex">
+              <p class="usefull__card-descr">
+                И&nbsp;нет сомнений, что сделанные на&nbsp;базе интернет-аналитики выводы представляют собой не&nbsp;что
+                иное?
+              </p>
+              <a href="#" class="usefull__card-btn buy-btn">
+                Читать
+              </a>
+            </div>
+          </div>
+          <div class="usefull__card flex">
+            <picture class="usefull__card-picture">
+              <source media="(max-width: 1024px)" srcset="img/usefull-2-1024.png">
+              <source media="(max-width: 1920px)" srcset="img/usefull-2.png">
+              <img class="usefull__card-img" src="img/usefull-2.png" alt="usefull-2">
+            </picture>
+            <div class="usefull__card-content flex">
+              <p class="usefull__card-descr">
+                Как принято считать, некоторые особенности приносят несомненную пользу обществу?
+              </p>
+              <a href="#" class="usefull__card-btn buy-btn">
+                Читать
+              </a>
+            </div>
+          </div>
+            <div class="usefull__card flex">
+              <picture class="usefull__card-picture">
+                <source media="(max-width: 1024px)" srcset="img/usefull-3-1024.png">
+                <source media="(max-width: 1920px)" srcset="img/usefull-3-1024.png">
+                <img class="usefull__card-img" src="img/usefull-3-1024.png" alt="usefull-3">
+              </picture>
+              <div class="usefull__card-content flex">
+                <p class="usefull__card-descr">
+                  Ясность нашей позиции очевидна: укрепление и&nbsp;развитие внутренней структуры?
+                </p>
+                <a href="#" class="usefull__card-btn buy-btn">
+                  Читать
+                </a>
+              </div>
+            </div>
+              <div class="usefull__card flex">
+                <picture class="usefull__card-picture">
+                  <source media="(max-width: 1024px)" srcset="img/usefull-4-320.png">
+                  <source media="(max-width: 1920px)" srcset="img/usefull-4.png">
+                  <img class="usefull__card-img" src="img/usefull-4.png" alt="usefull-4">
+                </picture>
+                <div class="usefull__card-content flex">
+                  <p class="usefull__card-descr">
+                    Прежде всего, консультация с&nbsp;широким активом однозначно фиксирует необходимость распределения?
+                  </p>
+                  <a href="#" class="usefull__card-btn buy-btn">
+                    Читать
+                  </a>
+                </div>
+              </div>
+                <div class="usefull__card flex">
+                  <picture class="usefull__card-picture">
+                    <source media="(max-width: 1024px)" srcset="img/usefull-5-320.png">
+                    <source media="(max-width: 1920px)" srcset="img/usefull-5.png">
+                    <img class="usefull__card-img" src="img/usefull-5.png" alt="usefull-5">
+                  </picture>
+                  <div class="usefull__card-content flex">
+                    <p class="usefull__card-descr">
+                      Как принято считать, некоторые особенности приносят несомненную пользу обществу?
+                    </p>
+                    <a href="#" class="usefull__card-btn buy-btn">
+                      Читать
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+    </section>
+    <section class="fos">
+      <div class="fos__container container">
+        <h2 class="fos__title title-1">Мы всегда вам рады!</h2>
+        <div class="fos__content grid">
+        <div class="fos__left flex">
+          <p class="fos__descr">
+            Безусловно, новая модель организационной деятельности в&nbsp;значительной степени обусловливает важность
+            распределения внутренних резервов и&nbsp;ресурсов.
+          </p>
+          <form class="fos__form flex" action="https://jsonplaceholder.typicode.com/posts" method="post">
+            <input class="fos__form-input" type="text" required="" name="initials" placeholder="Как вас зовут?">
+            <input class="fos__form-input" type="email" name="Email" placeholder="Ваш телефон" id="phone">
+            <input class="fos__form-input last-input" type="email" name="Email" placeholder="Ваш e-mail" id="email">
+            <button class="fos__form-btn btn-reset primary-link">
+              Отправить
+            </button>
+            <div class="fos__form-checkbox flex">
+              <input type="checkbox" class="fos__checkbox-input" id="checkbox" name="agreeement" checked="">
+              <label class="fos__checkbox-text" for="checkbox">Принимаю <a class="fos__checkbox-link" href="">пользовательское соглашение</a></label>
+            </div>
+          </form>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+  @include('partials/footer.html')
+</body>

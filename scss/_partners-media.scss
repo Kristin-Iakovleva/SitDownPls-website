@@ -1,0 +1,134 @@
+@media (max-width: 1295px) {
+
+    .header {
+        padding-bottom: 11px;
+    }
+
+    .main {
+        padding-top: 12px;
+        padding-bottom: 70px;
+    }
+
+    .main__text-1 {
+        width: 88%;
+    }
+
+    .main__list-1 {
+        width: 65%;
+    }
+
+    .main__garant {
+        width: 67%;
+    }
+
+    .main__garant-img {
+        margin-right: 32px;
+        width: 17%;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .main__text-1 {
+        width: 104%;
+    }
+
+    .main__list-1 {
+        width: 100%;
+    }
+
+    .main__title-medium {
+        margin-bottom: 15px;
+    }
+
+    .main__garant {
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .main__text-1 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 440px) {
+
+    .main__links {
+        display: none;
+    }
+
+    .main {
+        padding-top: 21px;
+        padding-bottom: 70px;
+    }
+
+    .main__title {
+        margin-bottom: 29px;
+    }
+
+    .main__title-medium {
+        margin-bottom: 6px;
+        font-size: 16px;
+    }
+
+    .main__text-1 {
+        margin-bottom: 26px;
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .main__item {
+        font-size: 14px;
+    }
+
+    .title-14px {
+        font-size: 14px;
+    }
+
+    .main__list-1 {
+        margin-bottom: 28px;
+    }
+
+    .text-advantages {
+        margin-bottom: 10px;
+    }
+
+    .main__title-small {
+        margin-bottom: 15px;
+    }
+
+    .adv-2 {
+        margin-bottom: 25px;
+    }
+
+    .garant-title {
+        margin-bottom: 10px;
+    }
+
+    .main__garant-text {
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    .main__list-2 {
+        margin-top: -4px;
+        padding-left: 25px;
+        margin-bottom: 27px;
+    }
+
+    .main__item-ordinary {
+        margin-bottom: 12px;
+    }
+
+    .main__garant {
+        width: 80%;
+    }
+
+    .main__garant-img {
+        margin-right: 12px;
+        width: 44%;
+    }
+
+}

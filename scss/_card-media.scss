@@ -1,0 +1,255 @@
+@media (max-width: 1295px) {
+    .header {
+        padding-bottom: 11px;
+    }
+
+    .card {
+        padding-top: 12px;
+        padding-bottom: 20px;
+    }
+
+    .card__item {
+        margin-bottom: 81px;
+        width: 96.5%;
+    }
+
+    .card__item-img {
+        padding-top: 24px;
+        margin-right: 32px;
+    }
+
+    .card__content-descr {
+        margin-right: 32px;
+        width: 62%;
+    }
+
+    .text-2 {
+        margin-bottom: 85px;
+    }
+
+    .card__content-images {
+        width: 98%;
+    }
+
+    .card__content-list {
+        width: 49%;
+    }
+
+    .card__content-left {
+        width: 46%;
+    }
+
+    .similar__grid {
+        grid-template-columns: repeat(3, 3fr);
+    }
+
+    .similar__grid-item:nth-child(n+4) {
+        display: none;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .links-block {
+        padding: 12px 72px 21px;
+    }
+}
+
+@media (max-width: 800px) {
+    .card__item {
+        margin-bottom: 82px;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .card__item-img {
+        padding-top: 0;
+        margin-right: 0;
+        margin-bottom: 80px;
+        width: 100%;
+    }
+
+    .card__content {
+        flex-direction: column;
+    }
+
+    .card__content-descr {
+        margin-bottom: 25px;
+        width: 83%;
+    }
+
+    .text-2 {
+        margin-bottom: 32px;
+    }
+
+    .card__content-images {
+        width: 100%;
+    }
+
+    .card__content-list {
+        width: 100%;
+    }
+
+    .card__content-left {
+        width: 65%;
+    }
+
+    .card__content-right {
+        width: 35%;
+    }
+
+    .similar {
+        padding: 11px 0 67px;
+    }
+
+    .similar__grid {
+        grid-template-columns: repeat(2, 3fr);
+    }
+
+    .similar__grid-item:nth-child(n+3) {
+        display: none;
+    }
+
+}
+
+@media (max-width: 570px) {
+
+    .card__short {
+        position: relative;
+    }
+
+    .card__item {
+        margin-bottom: 113px;
+    }
+
+    .card-item-title {
+        font-size: 16px;
+    }
+
+    .primary-link {
+        bottom: -66px;
+    }
+
+    .card__short-add {
+        position: absolute;
+        bottom: -74px;
+        left: 130px;
+    }
+}
+
+@media (max-width: 440px) {
+    .card__item {
+        margin-bottom: 120px;
+    }
+
+    .card__item-img {
+        margin-bottom: 15px;
+    }
+
+    .card__short-rate {
+        margin-bottom: 1px;
+        font-size: 16px;
+        line-height: 130%;
+    }
+
+    .card-item-rate {
+        display: block;
+    }
+
+
+    .card__short-title {
+        margin-bottom: 9px;
+        font-size: 16px;
+        line-height: 130%;
+    }
+
+    .card__short-descr {
+        margin-bottom: 16px;
+    }
+
+    .card__short-price {
+        margin-bottom: 14px;
+        font-size: 24px;
+        line-height: 130%;
+    }
+
+    .primary-link {
+        padding: 19px 50px;
+        margin-bottom: 6px;
+        display: inline-block;
+        width: 100%;
+        bottom: -60px;
+        left: 0px;
+    }
+
+    .card__short-add {
+        bottom: -89px;
+        left: 64px;
+    }
+
+    .card__content-descr {
+        width: 99%;
+    }
+
+    .card__content-item {
+        margin: 3px 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card__content-list li {
+        margin: 3px 0;
+    }
+
+    .card__content-left {
+        margin-right: 0;
+        margin-bottom: 3px;
+        font-size: 10px;
+        line-height: 13.62px;
+        width: 40%;
+    }
+
+    .card__content-right {
+        margin-left: 0;
+        width: 74%;
+        line-height: 19.07px;
+    }
+
+    .card__content-left:after {
+        display: none;
+    }
+
+    .similar {
+        padding: 47px 0 67px;
+    }
+
+    .similar__grid {
+        gap: 16px;
+    }
+
+    .card-item-title {
+        margin-bottom: 16px;
+        font-size: 16px;
+        line-height: 130%;
+    }
+
+    .grid-price {
+        margin-bottom: 16px;
+    }
+
+    .card-item {
+        min-height: 278px;
+        height: 100%;
+    }
+
+    .card-item-picture {
+        height: 62px;
+        margin-bottom: 9px;
+    }
+
+    .card-item-btn {
+        padding: 10px 21px;
+        width: 105px;
+    }
+    
+}

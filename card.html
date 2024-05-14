@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SitDownPls</title>
+  <link rel="stylesheet" href="./css/vendor.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/card.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <script defer src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+  @include('partials/header.html')
+  <main>
+    <h1 class="title is-hidden">Card</h1>
+    <div class="links-block container flex">
+      <a class="link" href="index.html" target="_blank"> Главная / </a>
+      <a class="link" href="catalog.html" target="_blank"> Каталог / </a>
+      <a class="link" href="catalog.html" target="_blank"> Диваны / </a>
+      <a class="link" href="catalog.html" target="_blank"> Прямые диваны / </a>
+      <p class="link-name"> D-31</p>
+    </div>
+    <section class="card">
+      <div class="card__container container">
+      <div class="card__item flex">
+        <picture class="card__item-img">
+          <source media="(max-width: 440px)" srcset="img/card-1-320.png">
+          <source media="(max-width: 800px)" srcset="img/card-1-768.png">
+          <source media="(max-width: 1024px)" srcset="img/card-1-1024.png">
+          <source media="(max-width: 1920px)" srcset="img/card-1.png">
+          <img src="img/card-1.png" alt="Card-1">
+        </picture>
+        <div class="card__short flex">
+          <span class="card__short-rate grid-rate">
+            <svg class="card__short-icon grid-icon">
+              <use xlink:href="/img/sprites.svg#star"></use>
+            </svg>4,8
+          </span>
+          <h3 class="card__short-title title-2">
+            Диван тканевый прямой “D-31”
+          </h3>
+          <p class="card__short-descr">
+            Мини 120 см без ящика Stark синий (Рогожка)
+          </p>
+          <span class="card__short-price">28 490 руб</span>
+          <a target="_blank" href="card.html" class="card__short-btn primary-link">Купить в один клик</a>
+          <button class="card__short-add btn-reset">
+            + Добавить в корзину
+          </button>
+        </div>
+      </div>
+      <div class="card__content flex">
+        <div class="card__content-descr">
+          <h3 class="card__content-title">Опорный механизм</h3>
+          <p class="card__content-text text-1">
+            Опорный механизм напоминает пантограф, к&nbsp;которому добавили дополнительную секцию. У&nbsp;опорного
+            дивана сиденье &laquo;выпрыгивает&raquo; вперёд и&nbsp;вытаскивает вторую часть спального места.
+            Заключительный штрих&nbsp;&mdash; опустить спинку.
+          </p>
+          <p class="card__content-text text-2">
+            Этот механизм не&nbsp;портит пол и&nbsp;не&nbsp;боится ковров. Требуется чуть больше силы, чтобы разложить
+            диван, но&nbsp;подросток справится.
+          </p>
+          <div class="card__content-images flex">
+            <picture class="card__content-img">
+              <source media="(max-width: 1024px)" srcset="img/card-scheme-1.png">
+              <source media="(max-width: 1920px)" srcset="img/card-scheme-1.png">
+              <img src="img/card-scheme-1.png" alt="Scheme-1">
+            </picture>
+            <picture class="card__content-img">
+              <source media="(max-width: 1024px)" srcset="img/card-scheme-2.png">
+              <source media="(max-width: 1920px)" srcset="img/card-scheme-2.png">
+              <img src="img/card-scheme-2.png" alt="Scheme-2">
+            </picture>
+          </div>
+        </div>
+        <ul class="card__content-list list-reset">
+<li class="card__content-item">
+  <div class="card__content-left">
+    Гарантия
+  </div>
+  <div class="card__content-right">
+    18 месяцев
+  </div>
+</li>
+<li class="card__content-item">
+  <div class="card__content-left">
+    Артикул
+  </div>
+  <div class="card__content-right">
+    AAA41269004
+  </div>
+</li>
+<li class="card__content-item">
+  <div class="card__content-left">
+    Длина
+  </div>
+  <div class="card__content-right">
+    163 см
+  </div>
+</li>
+<li class="card__content-item">
+  <div class="card__content-left">
+    Высота
+  </div>
+  <div class="card__content-right">
+    90 см
+  </div>
+</li>
+<li class="card__content-item">
+  <div class="card__content-left">
+    Глубина
+  </div>
+  <div class="card__content-right">
+    108 см
+  </div>
+</li>
+<li class="card__content-item">
+  <div class="card__content-left">
+    Спальное место
+  </div>
+  <div class="card__content-right">
+    200 см х 125 см
+  </div>
+</li>
+<li class="card__content-item">
+  <div class="card__content-left">
+    Высота посадки
+  </div>
+  <div class="card__content-right">
+    45 см
+  </div>
+</li>
+<li class="card__content-item">
+  <div class="card__content-left">
+    Механизм
+  </div>
+  <div class="card__content-right">
+    Опорный
+  </div>
+</li>
+<li class="card__content-item">
+  <div class="card__content-left">
+    Тип обивки
+  </div>
+  <div class="card__content-right">
+    Рогожка
+  </div>
+</li>
+<li class="card__content-item">
+  <div class="card__content-left">
+    Цвет
+  </div>
+  <div class="card__content-right">
+    Синий
+  </div>
+</li>
+<li class="card__content-item">
+  <div class="card__content-left">
+    Наполнитель
+  </div>
+  <div class="card__content-right">
+    Независимый пружинный блок
+  </div>
+</li>
+<li class="card__content-item">
+  <div class="card__content-left">
+    Материал каркаса
+  </div>
+  <div class="card__content-right">
+     Металл. рама с дерев. латами
+  </div>
+</li>
+<li class="card__content-item">
+  <div class="card__content-left">
+    Количество мест
+  </div>
+  <div class="card__content-right">
+    Двухместные
+  </div>
+</li>
+<li class="card__content-item">
+  <div class="card__content-left">
+    Категория
+  </div>
+  <div class="card__content-right">
+    Прямые тканевые диваны
+  </div>
+</li>
+<li class="card__content-item">
+  <div class="card__content-left">
+    Возврат
+  </div>
+  <div class="card__content-right">
+    Условия
+  </div>
+</li>
+        </ul>
+      </div>
+    </div>
+    </section>
+    <section class="similar">
+<div class="similar__container container">
+<h2 class="similar__title title-2">Похожие товары</h2>
+<ul class="similar__grid grid list-reset">
+  <li class="similar__grid-item">
+    <article class="card-item">
+    <span class="card-item-rate grid-rate">
+      <svg class="card-item-icon grid-icon">
+        <use xlink:href="/img/sprites.svg#star"></use>
+      </svg>4,5
+    </span>
+    <div class="card-item-picture grid-picture flex">
+      <picture class="card-item-img">
+        <source media="(max-width: 440px)" srcset="img/similar-1-320.png">
+        <source media="(max-width: 1920px)" srcset="img/similar-1.png">
+        <img src="img/similar-1.png" alt="similar-1">
+      </picture>
+    </div>
+    <h3 class="card-item-title title-2">
+      Диван велюровый “R-85”
+    </h3>
+    <span class="card-item-price grid-price">34 990 руб</span>
+    <a target="_blank" href="card.html" class="card-item-btn grid-btn buy-btn">Купить</a>
+  </article>
+  </li>
+  <li class="similar__grid-item">
+    <article class="card-item">
+    <span class="card-item-rate grid-rate">
+      <svg class="card-item-icon grid-icon">
+        <use xlink:href="/img/sprites.svg#star"></use>
+      </svg>4,6
+    </span>
+    <div class="card-item-picture grid-picture flex">
+      <picture class="card-item-img">
+        <source media="(max-width: 440px)" srcset="img/similar-2-320.png">
+        <source media="(max-width: 1920px)" srcset="img/similar-2.png">
+        <img src="img/similar-2.png" alt="similar-2">
+      </picture>
+    </div>
+    <h3 class="card-item-title title-2">
+      Диван флоковый “H-58”
+    </h3>
+    <span class="card-item-price grid-price">23 990 руб</span>
+    <a target="_blank" href="card.html" class="card-item-btn grid-btn buy-btn">Купить</a>
+  </article>
+  </li>
+  <li class="similar__grid-item">
+    <article class="card-item">
+    <span class="card-item-rate grid-rate">
+      <svg class="card-item-icon grid-icon">
+        <use xlink:href="/img/sprites.svg#star"></use>
+      </svg>4,5
+    </span>
+    <div class="card-item-picture grid-picture flex">
+      <picture class="card-item-img">
+        <source media="(max-width: 1024px)" srcset="img/similar-3.png">
+        <source media="(max-width: 1920px)" srcset="img/similar-3.png">
+        <img src="img/similar-3.png" alt="similar-3">
+      </picture>
+    </div>
+    <h3 class="card-item-title title-2">
+      Диван велюровый “S-44”
+    </h3>
+    <span class="card-item-price grid-price">19 990 руб</span>
+    <a target="_blank" href="card.html" class="card-item-btn grid-btn buy-btn">Купить</a>
+  </article>
+  </li>
+  <li class="similar__grid-item">
+    <article class="card-item">
+    <span class="card-item-rate grid-rate">
+      <svg class="card-item-icon grid-icon">
+        <use xlink:href="/img/sprites.svg#star"></use>
+      </svg>4,8
+    </span>
+    <div class="card-item-picture grid-picture flex">
+      <picture class="card-item-img">
+        <source media="(max-width: 1024px)" srcset="img/similar-4.png">
+        <source media="(max-width: 1920px)" srcset="img/similar-4.png">
+        <img src="img/similar-4.png" alt="similar-4">
+      </picture>
+    </div>
+    <h3 class="card-item-title title-2">
+      Диван шиниловый “V-43”
+    </h3>
+    <span class="card-item-price grid-price">19 990 руб</span>
+    <a target="_blank" href="card.html" class="card-item-btn buy-btn">Купить</a>
+  </article>
+  </li>
+</ul>
+</div>
+    </section>
+  </main>
+  @include('partials/footer.html')
+</body>
